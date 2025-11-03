@@ -41,6 +41,26 @@ Siga os passos abaixo para rodar o projeto em sua máquina local.
 
 ### Instalação
 
+```
+npm create vite@latest meu-app
+```
+**Instalar dependências**
+```
+npm install
+```
+**Entrar na pasta do projeto**
+```
+cd meu-app
+```
+**Rodar o projeto**
+```
+npm run dev
+```
+
+
+
+
+
 1.  **Clone o repositório:**
     ```bash
     git clone https://github.com/seu-usuario/seu-repositorio.git
