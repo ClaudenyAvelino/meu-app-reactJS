@@ -1,6 +1,8 @@
 import './Planilha.css';
 
 // O componente agora só recebe os 'dados' prontos via props
+//Essa linha significa que o componente recebe uma prop chamada dados.
+//é um objeto passado de um componente pai para um componente filho.
 function Planilha({ dados }) {
   return (
     <div className="app">

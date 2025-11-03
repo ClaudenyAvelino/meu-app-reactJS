@@ -1,4 +1,7 @@
 // Importa os hooks useState e useEffect do React
+//useState	Gerenciar estado interno	Contadores, formulários, representa a memoria
+//useEffect	Efeitos colaterais	Buscar API, atualizar o título da página, como ligar ou desligar
+
 import { useState, useEffect } from 'react';
 
 // Importa os componentes da aplicação
@@ -8,7 +11,7 @@ import Saudacao from './Componentes/Saudacao/Saudacao';
 import Planilha from './Componentes/Planilha/Planilha';
 import AlunoDestaque from './Componentes/AlunoDestaque/AlunoDestaque';
 
-// Importa o CSS principal da aplicação
+
 import './App.css';
 
 // Componente principal da aplicação
@@ -25,6 +28,7 @@ function App() {
 
     // Faz a requisição para buscar os dados da planilha
     fetch(URL)
+      //Objeto de resposta do servidor ou da API
       .then(res => res.text()) // Converte a resposta em texto
       .then(csv => {
         // Divide o CSV em linhas e cada linha em colunas
