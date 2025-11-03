@@ -1,0 +1,42 @@
+.saudacao-container {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  min-height: 120px;
+  width: 90%; /* Adiciona largura para controlar melhor */
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.saudacao-input {
+  /* ... estilos existentes ... */
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.saudacao-mensagem {
+  /* ... estilos existentes ... */
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .saudacao-mensagem {
+    font-size: 20px; /* Fonte menor para a mensagem */
+  }
+}

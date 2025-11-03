@@ -1,42 +1,40 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* --- RESET GLOBAL E CORREÇÃO DEFINITIVA --- */
+
+/* 1. Garante que o corpo da página e o container principal do React (#root)
+      não tenham nenhuma margem ou padding que impeça o conteúdo de tocar as bordas. */
+body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* 2. Define o fundo preto para a página inteira */
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* 3. Garante que o container da sua aplicação também não tenha espaçamentos indesejados */
+.App {
+  width: 100%;
+}
+
+
+/* --- SEUS ESTILOS EXISTENTES (AGORA FUNCIONARÃO CORRETAMENTE) --- */
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  box-sizing: border-box; /* Importante para o padding não somar à largura */
+}
+
+/* --- Media Queries para responsividade --- */
+@media (max-width: 768px) {
+  .conteudo-principal {
+    gap: 20px;
+    padding: 20px 15px;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

@@ -1,0 +1,48 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #222;
+  padding: 20px;
+
+    /* --- ESTA É A CORREÇÃO DEFINITIVA --- */
+  /* Força o fundo a ser transparente, removendo qualquer cor indesejada */
+  background-color: transparent; 
+  
+  /* Garante que não há padding criando a caixa */
+  padding: 0; 
+}
+
+.app h2 {
+  color: white;
+}
+
+.app table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.app th {
+  background-color: #444;
+}
+
+.app td,
+.app th {
+  padding: 8px 12px;
+  border: 1px solid #555;
+  color: white;
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+.app tr {
+  background-color: #444;
+}
+
+.app tr:nth-child(even) {
+  background-color: #333;
+}
+
+.app tr:hover {
+  background-color: #555;
+}
