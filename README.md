@@ -1,3 +1,9 @@
+## 👨‍🏫 Professor
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/79340989?s=400&u=fcfb57bc9a07b8ce0eeae1195e243bb1cb56f6d8&v=4" width=115><br><sub>Claudeny Avelino</sub>](https://github.com/ClaudenyAvelino)
+ 
+**E-mail:** claudeny.avelino@gmail.com  
+**Turma:** JOVEM-TECH-ReactJS
+
 # Projeto de Aprendizado React: Dashboard Interativo
 
 Este é um projeto de front-end desenvolvido com o objetivo de praticar e demonstrar conceitos fundamentais e intermediários da biblioteca ReactJS. A aplicação exibe dados consumidos de uma planilha do Google Sheets, apresentando-os em uma tabela e destacando o primeiro registro. Além disso, a interface conta com componentes interativos e um design responsivo.
